@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remove GPS location from a photo | PhotoPrivacyTool</title>
+  <meta name="description" content="Remove geolocation from a photo in your browser and download a clean copy before you share it.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://photoprivacytool.pages.dev/en/remove-photo-gps/">
+  <link rel="alternate" hreflang="en" href="https://photoprivacytool.pages.dev/en/remove-photo-gps/"> <link rel="alternate" hreflang="es" href="https://photoprivacytool.pages.dev/es/quitar-gps-foto/"> <link rel="alternate" hreflang="x-default" href="https://photoprivacytool.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Remove GPS location from a photo | PhotoPrivacyTool">
+  <meta property="og:description" content="Remove geolocation from a photo in your browser and download a clean copy before you share it.">
+  <meta property="og:url" content="https://photoprivacytool.pages.dev/en/remove-photo-gps/">
+  <meta property="og:site_name" content="PhotoPrivacyTool">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Remove GPS location from a photo | PhotoPrivacyTool">
+  <meta name="twitter:description" content="Remove geolocation from a photo in your browser and download a clean copy before you share it.">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PhotoPrivacyTool",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "isAccessibleForFree": true,
+  "browserRequirements": "Requires a modern browser with File API and Canvas support.",
+  "url": "https://photoprivacytool.pages.dev/en/remove-photo-gps/",
+  "inLanguage": "en",
+  "description": "Remove geolocation from a photo in your browser and download a clean copy before you share it.",
+  "featureList": [
+    "Remove GPS by generating a clean local copy",
+    "Designed for privacy-first sharing",
+    "No backend upload"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="module" src="/assets/js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__row">
+    <a class="brand" href="/en/" aria-label="PhotoPrivacyTool">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">PhotoPrivacyTool<small>Local processing, no uploads</small></span>
+    </a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="site-nav" aria-label="Principal"><a href="/en/">Home</a><a href="/en/view-exif/">View EXIF</a><a href="/en/remove-exif/">Remove EXIF</a><a href="/en/remove-photo-gps/" aria-current="page">Remove GPS</a><a href="/en/photo-has-location/">Photo has location</a></nav>
+      
+        <div class="lang-switch" aria-label="Language switcher">
+          <a href="/es/">ES</a>
+          <span>EN</span>
+        </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="page-heading">
+    <div class="container page-heading__grid">
+      <div>
+        <span class="eyebrow">Local tool</span>
+        <h1>Remove GPS location from a photo</h1>
+        <p class="lede">Protect your privacy before you share a photo. This tool creates a clean copy without the original EXIF block, including GPS location.</p>
+        <ul class="badge-list">
+          <li>Designed around privacy and geolocation.</li><li>We do not send the photo to a server.</li><li>The downloadable copy is checked after processing.</li>
+        </ul>
+      </div>
+      <aside class="content-card">
+        <h2>What this V1 removes</h2>
+        <p>In this first version, the most robust 100% client-side way to remove GPS location is to create a new copy without keeping the original EXIF block.</p><p>That means GPS location disappears and other EXIF metadata is removed as well, which is helpful when your goal is to share the image with maximum privacy.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      
+<section class="card" data-tool-shell data-tool="remove-gps" data-lang="en" data-remove-exif-url="/en/remove-exif/" data-remove-gps-url="/en/remove-photo-gps/" data-view-exif-url="/en/view-exif/">
+  <div class="notice notice--privacy">
+    <strong>Privacy</strong>
+    Your photos are processed in your browser. They are not uploaded to our servers.
+  </div>
+  <label class="dropzone" data-dropzone>
+    <input class="sr-only" data-file-input type="file" accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif">
+    <span class="dropzone__title">Select a photo</span>
+    <span class="dropzone__sub">Drag a photo here</span>
+    <span class="dropzone__hint">JPG and JPEG are supported. PNG has basic support. HEIC is not yet reliably available in this V1.</span>
+  </label>
+  <div class="button-row">
+    <button type="button" class="button button--secondary" data-trigger-file>Choose an image from your device</button>
+  </div>
+  <div class="status-panel">
+    <div class="status-card" data-status></div>
+  </div>
+  <div class="tool-output" data-output hidden></div>
+</section>
+
+      <div class="notice notice--warning"><strong>Important</strong>In this V1, removing GPS means creating a new copy without the full EXIF block.</div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container content-columns">
+      <article class="content-card">
+        <h2>Before you share</h2>
+        <p>You can check whether the photo contains location data first, then create a clean copy if the answer is yes.</p>
+      </article>
+      <aside class="content-card">
+        <h2>Related links</h2>
+        <div class="link-grid">
+          <a class="link-card" href="/en/photo-has-location/"><h3>Check whether the photo has location data</h3></a>
+<a class="link-card" href="/en/view-exif/"><h3>View full EXIF</h3></a>
+<a class="link-card" href="/en/remove-exif/"><h3>Remove all EXIF</h3></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    
+        <div class="footer-grid">
+          <div class="site-footer__brand">
+            <h2>PhotoPrivacyTool</h2>
+            <p>Your photos are processed in your browser. They are not uploaded to our servers.</p>
+            <p class="smallprint">Static site compatible with Cloudflare Pages.</p>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul><li><a href="/en/view-exif/">View EXIF</a></li><li><a href="/en/remove-exif/">Remove EXIF</a></li><li><a href="/en/remove-photo-gps/">Remove GPS</a></li><li><a href="/en/photo-has-location/">Photo has location</a></li></ul>
+          </div>
+          <div>
+            <h3>Legal</h3>
+            <ul><li><a href="/en/privacy/">Privacy</a></li><li><a href="/en/terms/">Terms</a></li><li><a href="/en/cookies/">Cookies</a></li></ul>
+          </div>
+        </div>
+        
+  </div>
+</footer>
+</body>
+</html>

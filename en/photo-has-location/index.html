@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Check whether a photo has GPS location | PhotoPrivacyTool</title>
+  <meta name="description" content="Check whether a photo contains GPS location data and understand what it means for your privacy before sharing.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://photoprivacytool.pages.dev/en/photo-has-location/">
+  <link rel="alternate" hreflang="en" href="https://photoprivacytool.pages.dev/en/photo-has-location/"> <link rel="alternate" hreflang="es" href="https://photoprivacytool.pages.dev/es/foto-tiene-ubicacion/"> <link rel="alternate" hreflang="x-default" href="https://photoprivacytool.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Check whether a photo has GPS location | PhotoPrivacyTool">
+  <meta property="og:description" content="Check whether a photo contains GPS location data and understand what it means for your privacy before sharing.">
+  <meta property="og:url" content="https://photoprivacytool.pages.dev/en/photo-has-location/">
+  <meta property="og:site_name" content="PhotoPrivacyTool">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Check whether a photo has GPS location | PhotoPrivacyTool">
+  <meta name="twitter:description" content="Check whether a photo contains GPS location data and understand what it means for your privacy before sharing.">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PhotoPrivacyTool",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "isAccessibleForFree": true,
+  "browserRequirements": "Requires a modern browser with File API and Canvas support.",
+  "url": "https://photoprivacytool.pages.dev/en/photo-has-location/",
+  "inLanguage": "en",
+  "description": "Check whether a photo contains GPS location data and understand what it means for your privacy before sharing.",
+  "featureList": [
+    "Detect readable GPS metadata",
+    "Yes/No answer",
+    "Direct next step to remove location"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="module" src="/assets/js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__row">
+    <a class="brand" href="/en/" aria-label="PhotoPrivacyTool">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">PhotoPrivacyTool<small>Local processing, no uploads</small></span>
+    </a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="site-nav" aria-label="Principal"><a href="/en/">Home</a><a href="/en/view-exif/">View EXIF</a><a href="/en/remove-exif/">Remove EXIF</a><a href="/en/remove-photo-gps/">Remove GPS</a><a href="/en/photo-has-location/" aria-current="page">Photo has location</a></nav>
+      
+        <div class="lang-switch" aria-label="Language switcher">
+          <a href="/es/">ES</a>
+          <span>EN</span>
+        </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="page-heading">
+    <div class="container page-heading__grid">
+      <div>
+        <span class="eyebrow">Local tool</span>
+        <h1>Check whether a photo has GPS location</h1>
+        <p class="lede">Get a simple, understandable answer: your photo either does or does not contain GPS location data.</p>
+        <ul class="badge-list">
+          <li>Highly visible Yes or No result.</li><li>Explanation for non-technical users.</li><li>Direct link to the tool that removes location.</li>
+        </ul>
+      </div>
+      <aside class="content-card">
+        <h2>What the result means</h2>
+        <p>If the result is positive, the image still stores GPS coordinates in its metadata. That does not mean the photo visibly shows a map; it means the file keeps the location behind the scenes.</p><p>If the result is negative, this tool did not detect readable GPS coordinates in the analyzed file.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      
+<section class="card" data-tool-shell data-tool="check-location" data-lang="en" data-remove-exif-url="/en/remove-exif/" data-remove-gps-url="/en/remove-photo-gps/" data-view-exif-url="/en/view-exif/">
+  <div class="notice notice--privacy">
+    <strong>Privacy</strong>
+    Your photos are processed in your browser. They are not uploaded to our servers.
+  </div>
+  <label class="dropzone" data-dropzone>
+    <input class="sr-only" data-file-input type="file" accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif">
+    <span class="dropzone__title">Select a photo</span>
+    <span class="dropzone__sub">Drag a photo here</span>
+    <span class="dropzone__hint">JPG and JPEG are supported. PNG has basic support. HEIC is not yet reliably available in this V1.</span>
+  </label>
+  <div class="button-row">
+    <button type="button" class="button button--secondary" data-trigger-file>Choose an image from your device</button>
+  </div>
+  <div class="status-panel">
+    <div class="status-card" data-status></div>
+  </div>
+  <div class="tool-output" data-output hidden></div>
+</section>
+
+      
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container content-columns">
+      <article class="content-card">
+        <h2>Next step</h2>
+        <p>If you prefer to share a more private version, use the tool that removes GPS location from the photo.</p>
+      </article>
+      <aside class="content-card">
+        <h2>Related links</h2>
+        <div class="link-grid">
+          <a class="link-card" href="/en/remove-photo-gps/"><h3>Remove GPS location</h3></a>
+<a class="link-card" href="/en/view-exif/"><h3>View full EXIF</h3></a>
+<a class="link-card" href="/en/faq/"><h3>Frequently asked questions</h3></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    
+        <div class="footer-grid">
+          <div class="site-footer__brand">
+            <h2>PhotoPrivacyTool</h2>
+            <p>Your photos are processed in your browser. They are not uploaded to our servers.</p>
+            <p class="smallprint">Static site compatible with Cloudflare Pages.</p>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul><li><a href="/en/view-exif/">View EXIF</a></li><li><a href="/en/remove-exif/">Remove EXIF</a></li><li><a href="/en/remove-photo-gps/">Remove GPS</a></li><li><a href="/en/photo-has-location/">Photo has location</a></li></ul>
+          </div>
+          <div>
+            <h3>Legal</h3>
+            <ul><li><a href="/en/privacy/">Privacy</a></li><li><a href="/en/terms/">Terms</a></li><li><a href="/en/cookies/">Cookies</a></li></ul>
+          </div>
+        </div>
+        
+  </div>
+</footer>
+</body>
+</html>

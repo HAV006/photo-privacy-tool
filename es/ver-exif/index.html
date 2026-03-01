@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ver metadatos EXIF de una foto | PhotoPrivacyTool</title>
+  <meta name="description" content="Analiza metadatos EXIF de una foto JPG o PNG en tu navegador y detecta si contiene ubicación GPS antes de compartirla.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://photoprivacytool.pages.dev/es/ver-exif/">
+  <link rel="alternate" hreflang="es" href="https://photoprivacytool.pages.dev/es/ver-exif/"> <link rel="alternate" hreflang="en" href="https://photoprivacytool.pages.dev/en/view-exif/"> <link rel="alternate" hreflang="x-default" href="https://photoprivacytool.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ver metadatos EXIF de una foto | PhotoPrivacyTool">
+  <meta property="og:description" content="Analiza metadatos EXIF de una foto JPG o PNG en tu navegador y detecta si contiene ubicación GPS antes de compartirla.">
+  <meta property="og:url" content="https://photoprivacytool.pages.dev/es/ver-exif/">
+  <meta property="og:site_name" content="PhotoPrivacyTool">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ver metadatos EXIF de una foto | PhotoPrivacyTool">
+  <meta name="twitter:description" content="Analiza metadatos EXIF de una foto JPG o PNG en tu navegador y detecta si contiene ubicación GPS antes de compartirla.">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PhotoPrivacyTool",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "isAccessibleForFree": true,
+  "browserRequirements": "Requires a modern browser with File API and Canvas support.",
+  "url": "https://photoprivacytool.pages.dev/es/ver-exif/",
+  "inLanguage": "es",
+  "description": "Analiza metadatos EXIF de una foto JPG o PNG en tu navegador y detecta si contiene ubicación GPS antes de compartirla.",
+  "featureList": [
+    "Read EXIF metadata locally in the browser",
+    "Detect GPS metadata",
+    "No account required"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="module" src="/assets/js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container site-header__row">
+    <a class="brand" href="/es/" aria-label="PhotoPrivacyTool">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">PhotoPrivacyTool<small>Procesado local, sin subidas</small></span>
+    </a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="site-nav" aria-label="Principal"><a href="/es/">Inicio</a><a href="/es/ver-exif/" aria-current="page">Ver EXIF</a><a href="/es/quitar-exif/">Quitar EXIF</a><a href="/es/quitar-gps-foto/">Quitar GPS</a><a href="/es/foto-tiene-ubicacion/">Foto tiene ubicación</a></nav>
+      
+        <div class="lang-switch" aria-label="Selector de idioma">
+          <span>ES</span>
+          <a href="/en/">EN</a>
+        </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="page-heading">
+    <div class="container page-heading__grid">
+      <div>
+        <span class="eyebrow">Herramienta local</span>
+        <h1>Ver metadatos EXIF de una foto</h1>
+        <p class="lede">Analiza la foto en tu navegador y revisa qué información técnica contiene antes de compartirla o publicarla.</p>
+        <ul class="badge-list">
+          <li>Detecta EXIF y muestra los campos encontrados en una tabla clara.</li><li>Resalta de forma muy visible si existe información GPS.</li><li>No necesitas crear cuenta ni subir archivos.</li>
+        </ul>
+      </div>
+      <aside class="content-card">
+        <h2>Qué puedes comprobar aquí</h2>
+        <p>La herramienta lee el bloque EXIF del archivo seleccionado y te muestra campos habituales como fecha, dispositivo, orientación, software y datos de localización cuando están disponibles.</p><p>Si la foto no contiene EXIF, verás un mensaje claro para que sepas que el archivo no conserva ese bloque de metadatos.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      
+<section class="card" data-tool-shell data-tool="view-exif" data-lang="es" data-remove-exif-url="/es/quitar-exif/" data-remove-gps-url="/es/quitar-gps-foto/" data-view-exif-url="/es/ver-exif/">
+  <div class="notice notice--privacy">
+    <strong>Privacidad</strong>
+    Tus fotos se procesan en tu navegador. No se suben a nuestros servidores.
+  </div>
+  <label class="dropzone" data-dropzone>
+    <input class="sr-only" data-file-input type="file" accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif">
+    <span class="dropzone__title">Selecciona una foto</span>
+    <span class="dropzone__sub">Arrastra una foto aquí</span>
+    <span class="dropzone__hint">JPG y JPEG son compatibles. PNG tiene soporte básico. HEIC todavía no está disponible de forma fiable en esta V1.</span>
+  </label>
+  <div class="button-row">
+    <button type="button" class="button button--secondary" data-trigger-file>Elige una imagen desde tu dispositivo</button>
+  </div>
+  <div class="status-panel">
+    <div class="status-card" data-status></div>
+  </div>
+  <div class="tool-output" data-output hidden></div>
+</section>
+
+      
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container content-columns">
+      <article class="content-card">
+        <h2>Después de revisar los metadatos</h2>
+        <p>Si detectas ubicación GPS o prefieres compartir una copia más privada, puedes crear una versión limpia desde tu navegador en segundos.</p>
+      </article>
+      <aside class="content-card">
+        <h2>Enlaces relacionados</h2>
+        <div class="link-grid">
+          <a class="link-card" href="/es/foto-tiene-ubicacion/"><h3>Comprobar si tu foto tiene ubicación</h3></a>
+<a class="link-card" href="/es/quitar-exif/"><h3>Quitar EXIF de una foto</h3></a>
+<a class="link-card" href="/es/quitar-gps-foto/"><h3>Quitar GPS de una foto</h3></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    
+        <div class="footer-grid">
+          <div class="site-footer__brand">
+            <h2>PhotoPrivacyTool</h2>
+            <p>Tus fotos se procesan en tu navegador. No se suben a nuestros servidores.</p>
+            <p class="smallprint">Web estática compatible con Cloudflare Pages.</p>
+          </div>
+          <div>
+            <h3>Herramientas</h3>
+            <ul><li><a href="/es/ver-exif/">Ver EXIF</a></li><li><a href="/es/quitar-exif/">Quitar EXIF</a></li><li><a href="/es/quitar-gps-foto/">Quitar GPS</a></li><li><a href="/es/foto-tiene-ubicacion/">Foto tiene ubicación</a></li></ul>
+          </div>
+          <div>
+            <h3>Legal</h3>
+            <ul><li><a href="/es/privacidad/">Privacidad</a></li><li><a href="/es/terminos/">Términos</a></li><li><a href="/es/cookies/">Cookies</a></li></ul>
+          </div>
+        </div>
+        
+  </div>
+</footer>
+</body>
+</html>

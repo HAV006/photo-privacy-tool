@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preguntas frecuentes sobre EXIF y privacidad | PhotoPrivacyTool</title>
+  <meta name="description" content="Respuestas claras sobre EXIF, ubicación GPS, privacidad, calidad de imagen y procesamiento local en el navegador.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://photoprivacytool.pages.dev/es/preguntas-frecuentes/">
+  <link rel="alternate" hreflang="es" href="https://photoprivacytool.pages.dev/es/preguntas-frecuentes/"> <link rel="alternate" hreflang="en" href="https://photoprivacytool.pages.dev/en/faq/"> <link rel="alternate" hreflang="x-default" href="https://photoprivacytool.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Preguntas frecuentes sobre EXIF y privacidad | PhotoPrivacyTool">
+  <meta property="og:description" content="Respuestas claras sobre EXIF, ubicación GPS, privacidad, calidad de imagen y procesamiento local en el navegador.">
+  <meta property="og:url" content="https://photoprivacytool.pages.dev/es/preguntas-frecuentes/">
+  <meta property="og:site_name" content="PhotoPrivacyTool">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Preguntas frecuentes sobre EXIF y privacidad | PhotoPrivacyTool">
+  <meta name="twitter:description" content="Respuestas claras sobre EXIF, ubicación GPS, privacidad, calidad de imagen y procesamiento local en el navegador.">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué son los metadatos EXIF de una foto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los metadatos EXIF son datos técnicos que algunas cámaras y móviles guardan dentro del archivo. Pueden incluir fecha, modelo de dispositivo, orientación, ajustes de cámara y, en algunos casos, coordenadas GPS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Esta web sube mis fotos a un servidor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. En esta V1 el análisis y la limpieza se realizan dentro del navegador del usuario. La imagen no se envía a un backend propio para procesarla."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué significa que una foto tenga ubicación GPS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Significa que el archivo conserva coordenadas asociadas al lugar donde se tomó la foto. Si compartes esa imagen, otra persona podría descubrir una ubicación aproximada o exacta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Quitar GPS también elimina otros metadatos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, en esta V1 la forma más robusta y privada de quitar la ubicación consiste en generar una nueva copia limpia sin conservar el bloque EXIF original. Por tanto, se elimina la geolocalización y también el resto de metadatos EXIF."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Pierde calidad la foto al limpiar EXIF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Intentamos mantener una calidad visual alta. En JPEG se genera una nueva copia con calidad alta y en PNG se exporta de nuevo sin el bloque de metadatos original. Puede haber diferencias mínimas de peso o compresión según el formato de salida."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Funciona con HEIC o HEIF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todavía no de forma fiable en todos los navegadores. La interfaz muestra un aviso elegante cuando detecta HEIC o HEIF y recomienda convertir primero la imagen a JPG o PNG."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container site-header__row">
+    <a class="brand" href="/es/" aria-label="PhotoPrivacyTool">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">PhotoPrivacyTool<small>Procesado local, sin subidas</small></span>
+    </a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="site-nav" aria-label="Principal"><a href="/es/">Inicio</a><a href="/es/ver-exif/">Ver EXIF</a><a href="/es/quitar-exif/">Quitar EXIF</a><a href="/es/quitar-gps-foto/">Quitar GPS</a><a href="/es/foto-tiene-ubicacion/">Foto tiene ubicación</a></nav>
+      
+        <div class="lang-switch" aria-label="Selector de idioma">
+          <span>ES</span>
+          <a href="/en/">EN</a>
+        </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="page-heading">
+    <div class="container">
+      <span class="eyebrow">Ayuda</span>
+      <h1>Preguntas frecuentes sobre EXIF, GPS y privacidad</h1>
+      <p class="lede">Aquí respondemos dudas habituales sobre EXIF, ubicación GPS, calidad y privacidad. Si necesitas comprobar una foto concreta, ve primero a las herramientas prácticas.</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="faq-list">
+        <details class="faq-item"><summary>¿Qué son los metadatos EXIF de una foto?</summary><p>Los metadatos EXIF son datos técnicos que algunas cámaras y móviles guardan dentro del archivo. Pueden incluir fecha, modelo de dispositivo, orientación, ajustes de cámara y, en algunos casos, coordenadas GPS.</p></details>
+<details class="faq-item"><summary>¿Esta web sube mis fotos a un servidor?</summary><p>No. En esta V1 el análisis y la limpieza se realizan dentro del navegador del usuario. La imagen no se envía a un backend propio para procesarla.</p></details>
+<details class="faq-item"><summary>¿Qué significa que una foto tenga ubicación GPS?</summary><p>Significa que el archivo conserva coordenadas asociadas al lugar donde se tomó la foto. Si compartes esa imagen, otra persona podría descubrir una ubicación aproximada o exacta.</p></details>
+<details class="faq-item"><summary>¿Quitar GPS también elimina otros metadatos?</summary><p>Sí, en esta V1 la forma más robusta y privada de quitar la ubicación consiste en generar una nueva copia limpia sin conservar el bloque EXIF original. Por tanto, se elimina la geolocalización y también el resto de metadatos EXIF.</p></details>
+<details class="faq-item"><summary>¿Pierde calidad la foto al limpiar EXIF?</summary><p>Intentamos mantener una calidad visual alta. En JPEG se genera una nueva copia con calidad alta y en PNG se exporta de nuevo sin el bloque de metadatos original. Puede haber diferencias mínimas de peso o compresión según el formato de salida.</p></details>
+<details class="faq-item"><summary>¿Funciona con HEIC o HEIF?</summary><p>Todavía no de forma fiable en todos los navegadores. La interfaz muestra un aviso elegante cuando detecta HEIC o HEIF y recomienda convertir primero la imagen a JPG o PNG.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="content-card">
+        <h2>Ir a las herramientas</h2>
+        <div class="link-grid">
+          <a class="link-card" href="/es/foto-tiene-ubicacion/"><h3>Comprobar si tu foto tiene ubicación</h3></a>
+<a class="link-card" href="/es/quitar-exif/"><h3>Quitar EXIF de una foto</h3></a>
+<a class="link-card" href="/es/quitar-gps-foto/"><h3>Quitar GPS de una foto</h3></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    
+        <div class="footer-grid">
+          <div class="site-footer__brand">
+            <h2>PhotoPrivacyTool</h2>
+            <p>Tus fotos se procesan en tu navegador. No se suben a nuestros servidores.</p>
+            <p class="smallprint">Web estática compatible con Cloudflare Pages.</p>
+          </div>
+          <div>
+            <h3>Herramientas</h3>
+            <ul><li><a href="/es/ver-exif/">Ver EXIF</a></li><li><a href="/es/quitar-exif/">Quitar EXIF</a></li><li><a href="/es/quitar-gps-foto/">Quitar GPS</a></li><li><a href="/es/foto-tiene-ubicacion/">Foto tiene ubicación</a></li></ul>
+          </div>
+          <div>
+            <h3>Legal</h3>
+            <ul><li><a href="/es/privacidad/">Privacidad</a></li><li><a href="/es/terminos/">Términos</a></li><li><a href="/es/cookies/">Cookies</a></li></ul>
+          </div>
+        </div>
+        
+  </div>
+</footer>
+</body>
+</html>

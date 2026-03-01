@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remove EXIF from a photo online | PhotoPrivacyTool</title>
+  <meta name="description" content="Create a clean copy of your photo without EXIF metadata, processed locally in your browser with no file uploads.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://photoprivacytool.pages.dev/en/remove-exif/">
+  <link rel="alternate" hreflang="en" href="https://photoprivacytool.pages.dev/en/remove-exif/"> <link rel="alternate" hreflang="es" href="https://photoprivacytool.pages.dev/es/quitar-exif/"> <link rel="alternate" hreflang="x-default" href="https://photoprivacytool.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Remove EXIF from a photo online | PhotoPrivacyTool">
+  <meta property="og:description" content="Create a clean copy of your photo without EXIF metadata, processed locally in your browser with no file uploads.">
+  <meta property="og:url" content="https://photoprivacytool.pages.dev/en/remove-exif/">
+  <meta property="og:site_name" content="PhotoPrivacyTool">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Remove EXIF from a photo online | PhotoPrivacyTool">
+  <meta name="twitter:description" content="Create a clean copy of your photo without EXIF metadata, processed locally in your browser with no file uploads.">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "PhotoPrivacyTool",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "isAccessibleForFree": true,
+  "browserRequirements": "Requires a modern browser with File API and Canvas support.",
+  "url": "https://photoprivacytool.pages.dev/en/remove-exif/",
+  "inLanguage": "en",
+  "description": "Create a clean copy of your photo without EXIF metadata, processed locally in your browser with no file uploads.",
+  "featureList": [
+    "Create a clean copy locally",
+    "Remove the original EXIF block",
+    "Download directly"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+  </script>
+  <script type="module" src="/assets/js/main.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__row">
+    <a class="brand" href="/en/" aria-label="PhotoPrivacyTool">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__name">PhotoPrivacyTool<small>Local processing, no uploads</small></span>
+    </a>
+    <div style="display:flex;align-items:center;gap:1rem;">
+      <nav class="site-nav" aria-label="Principal"><a href="/en/">Home</a><a href="/en/view-exif/">View EXIF</a><a href="/en/remove-exif/" aria-current="page">Remove EXIF</a><a href="/en/remove-photo-gps/">Remove GPS</a><a href="/en/photo-has-location/">Photo has location</a></nav>
+      
+        <div class="lang-switch" aria-label="Language switcher">
+          <a href="/es/">ES</a>
+          <span>EN</span>
+        </div>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <section class="page-heading">
+    <div class="container page-heading__grid">
+      <div>
+        <span class="eyebrow">Local tool</span>
+        <h1>Remove EXIF from a photo</h1>
+        <p class="lede">Create a new copy of the image without the original EXIF block, directly on your device and without relying on a server.</p>
+        <ul class="badge-list">
+          <li>Local browser-side processing.</li><li>Download a clean copy ready to share.</li><li>Visible confirmation that the new copy no longer keeps EXIF.</li>
+        </ul>
+      </div>
+      <aside class="content-card">
+        <h2>How it works</h2>
+        <p>After you select a photo, the website recreates it locally in the browser to produce a new file that does not keep the EXIF block embedded in the original image.</p><p>We then verify the resulting copy to confirm that readable EXIF data is no longer present.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      
+<section class="card" data-tool-shell data-tool="remove-exif" data-lang="en" data-remove-exif-url="/en/remove-exif/" data-remove-gps-url="/en/remove-photo-gps/" data-view-exif-url="/en/view-exif/">
+  <div class="notice notice--privacy">
+    <strong>Privacy</strong>
+    Your photos are processed in your browser. They are not uploaded to our servers.
+  </div>
+  <label class="dropzone" data-dropzone>
+    <input class="sr-only" data-file-input type="file" accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif">
+    <span class="dropzone__title">Select a photo</span>
+    <span class="dropzone__sub">Drag a photo here</span>
+    <span class="dropzone__hint">JPG and JPEG are supported. PNG has basic support. HEIC is not yet reliably available in this V1.</span>
+  </label>
+  <div class="button-row">
+    <button type="button" class="button button--secondary" data-trigger-file>Choose an image from your device</button>
+  </div>
+  <div class="status-panel">
+    <div class="status-card" data-status></div>
+  </div>
+  <div class="tool-output" data-output hidden></div>
+</section>
+
+      
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container content-columns">
+      <article class="content-card">
+        <h2>Helpful tip</h2>
+        <p>If you only want to check whether the image includes GPS location before cleaning it, use the dedicated location checker first.</p>
+      </article>
+      <aside class="content-card">
+        <h2>Related links</h2>
+        <div class="link-grid">
+          <a class="link-card" href="/en/view-exif/"><h3>View EXIF before cleaning</h3></a>
+<a class="link-card" href="/en/photo-has-location/"><h3>Check GPS location data</h3></a>
+<a class="link-card" href="/en/faq/"><h3>Frequently asked questions</h3></a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    
+        <div class="footer-grid">
+          <div class="site-footer__brand">
+            <h2>PhotoPrivacyTool</h2>
+            <p>Your photos are processed in your browser. They are not uploaded to our servers.</p>
+            <p class="smallprint">Static site compatible with Cloudflare Pages.</p>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul><li><a href="/en/view-exif/">View EXIF</a></li><li><a href="/en/remove-exif/">Remove EXIF</a></li><li><a href="/en/remove-photo-gps/">Remove GPS</a></li><li><a href="/en/photo-has-location/">Photo has location</a></li></ul>
+          </div>
+          <div>
+            <h3>Legal</h3>
+            <ul><li><a href="/en/privacy/">Privacy</a></li><li><a href="/en/terms/">Terms</a></li><li><a href="/en/cookies/">Cookies</a></li></ul>
+          </div>
+        </div>
+        
+  </div>
+</footer>
+</body>
+</html>
