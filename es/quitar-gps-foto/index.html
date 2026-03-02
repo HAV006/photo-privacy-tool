@@ -8,7 +8,47 @@
 <a class="skip-link" href="#main">Saltar al contenido</a> <header class="site-header"> <div class="container site-header__row"> <a class="brand" href="/es/" aria-label="PhotoPrivacyTool"> <span class="brand__mark" aria-hidden="true"></span> <span class="brand__name">PhotoPrivacyTool<small>Procesado local, sin subidas</small></span> </a> <div style="display:flex;align-items:center;gap:1rem;"> <nav class="site-nav" aria-label="Principal"><a href="/es/">Inicio</a></nav>
 </div> </div>
 </header>
-<main id="main"> <section class="page-heading"> <div class="container page-heading__grid"> <div> <span class="eyebrow">Herramienta local</span> <h1>Quitar ubicación GPS de una foto</h1> <p class="lede">Protege tu privacidad antes de compartir una foto. Esta herramienta crea una copia limpia sin el bloque EXIF original, incluyendo la ubicación GPS.</p> <ul class="badge-list"> <li>Pensado para privacidad y geolocalización.</li><li>No enviamos la foto a un servidor.</li><li>La copia descargable se verifica tras el procesamiento.</li> </ul> </div> <aside class="content-card"> <h2>Qué elimina esta </h2> <p> la forma más sólida de retirar la ubicación GPS en un entorno 100 % client-side es generar una nueva copia sin conservar el bloque EXIF original.</p><p>Eso implica que la ubicación GPS desaparece y que otros metadatos EXIF también se eliminan, algo positivo si tu objetivo es compartir con la máxima privacidad posible.</p> </aside> </div> </section> <section class="page-section"> <div class="container"> <section class="card" data-tool-shell data-tool="remove-gps" data-lang="es" data-remove-exif-url="/es/quitar-exif/" data-remove-gps-url="/es/quitar-gps-foto/" data-view-exif-url="/es/ver-exif/"> <div class="notice notice--privacy"> <strong>Privacidad</strong> Tus fotos se procesan en tu navegador. No se suben a nuestros servidores. </div> <label class="dropzone" data-dropzone> <input class="sr-only" data-file-input type="file" accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif"> <span class="dropzone__title">Selecciona una foto</span> <span class="dropzone__sub">Arrastra una foto aquí</span> <span class="dropzone__hint">JPG y JPEG son compatibles. PNG tiene soporte básico. HEIC todavía no está disponible de forma fiable en esta .</span> </label> <div class="button-row"> <button type="button" class="button button--secondary" data-trigger-file>Elige una imagen desde tu dispositivo</button> </div> <div class="status-panel"> <div class="status-card" data-status></div> </div> <div class="tool-output" data-output hidden></div>
+<main id="main"> <section class="page-heading"> <div class="container page-heading__grid"> <div> <span class="eyebrow">Herramienta local</span> <h1>Quitar ubicación GPS de una foto</h1> <p class="lede">Protege tu privacidad antes de compartir una foto. Esta herramienta crea una copia limpia sin el bloque EXIF original, incluyendo la ubicación GPS.</p> <ul class="badge-list"> <li>Pensado para privacidad y geolocalización.</li><li>No enviamos la foto a un servidor.</li><li>La copia descargable se verifica tras el procesamiento.</li> </ul> </div> <aside class="content-card"> <h2>Qué elimina esta </h2> <p> la forma más sólida de retirar la ubicación GPS en un entorno 100 % client-side es generar una nueva copia sin conservar el bloque EXIF original.</p><p>Eso implica que la ubicación GPS desaparece y que otros metadatos EXIF también se eliminan, algo positivo si tu objetivo es compartir con la máxima privacidad posible.</p> </aside> </div> </section> <section class="page-section"> <div class="container"> <section class="card" data-tool-shell data-tool="remove-gps" data-lang="es" data-remove-exif-url="/es/quitar-exif/" data-remove-gps-url="/es/quitar-gps-foto/" data-view-exif-url="/es/ver-exif/">
+  <div class="notice notice--privacy">
+    <strong>Privacidad</strong> Tus fotos se procesan en tu navegador. No se suben a nuestros servidores.
+  </div>
+
+  <div class="workbench-grid">
+    <div class="workbench-left">
+      <label class="dropzone" data-dropzone>
+        <input class="sr-only" data-file-input type="file" accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif">
+        <span class="dropzone__title">Selecciona una foto</span>
+        <span class="dropzone__sub">Arrastra una foto aquí</span>
+        <span class="dropzone__hint">JPG y JPEG compatibles. PNG con soporte básico. HEIC aún no tiene soporte fiable en todos los navegadores.</span>
+      </label>
+
+      <div class="button-row">
+        <button type="button" class="button button--secondary" data-trigger-file>Elige una imagen desde tu dispositivo</button>
+      </div>
+
+      <div class="status-panel">
+        <div class="status-card" data-status></div>
+      </div>
+
+      <div class="preview-shell" data-preview hidden>
+        <div class="preview-shell__grid">
+          <div class="preview-image">
+            <img data-preview-img src="" alt="">
+          </div>
+          <div class="preview-meta">
+            <p class="kicker">Archivo seleccionado</p>
+            <strong data-file-name>-</strong>
+            <span data-file-info>-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="workbench-right">
+      <div class="tool-output" data-output hidden></div>
+    </div>
+  </div>
+
 </section> <div class="notice notice--warning"><strong>Importante</strong>En esta herramienta, quitar GPS implica generar una copia nueva sin EXIF completo.</div> </div> </section> <section class="page-section"> <div class="container content-columns"> <article class="content-card"> <h2>Antes de compartir</h2> <p>Puedes comprobar primero si la foto contiene ubicación y después crear una copia limpia si la respuesta es positiva.</p> </article> <aside class="content-card"> <h2>Enlaces relacionados</h2> <div class="link-grid"> <a class="link-card" href="/es/foto-tiene-ubicacion/"><h3>Comprobar si la foto tiene ubicación</h3></a>
 <a class="link-card" href="/es/ver-exif/"><h3>Ver EXIF completo</h3></a>
 <a class="link-card" href="/es/quitar-exif/"><h3>Quitar EXIF completo</h3></a> </div> </aside> </div> </section>

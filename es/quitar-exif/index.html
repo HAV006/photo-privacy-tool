@@ -8,7 +8,47 @@
 <a class="skip-link" href="#main">Saltar al contenido</a> <header class="site-header"> <div class="container site-header__row"> <a class="brand" href="/es/" aria-label="PhotoPrivacyTool"> <span class="brand__mark" aria-hidden="true"></span> <span class="brand__name">PhotoPrivacyTool<small>Procesado local, sin subidas</small></span> </a> <div style="display:flex;align-items:center;gap:1rem;"> <nav class="site-nav" aria-label="Principal"><a href="/es/">Inicio</a></nav>
 </div> </div>
 </header>
-<main id="main"> <section class="page-heading"> <div class="container page-heading__grid"> <div> <span class="eyebrow">Herramienta local</span> <h1>Quitar EXIF de una foto</h1> <p class="lede">Genera una copia nueva de la imagen sin el bloque EXIF original, directamente en tu dispositivo y sin depender de un servidor.</p> <ul class="badge-list"> <li>Procesado local en el navegador.</li><li>Descarga una copia limpia lista para compartir.</li><li>Confirmación visible de que la copia ya no conserva EXIF.</li> </ul> </div> <aside class="content-card"> <h2>Cómo funciona</h2> <p>Al seleccionar la foto, la web la vuelve a generar localmente mediante el navegador para crear un nuevo archivo sin conservar el bloque EXIF incrustado en la imagen original.</p><p>Después verificamos la copia resultante para confirmar que ya no contiene EXIF legible.</p> </aside> </div> </section> <section class="page-section"> <div class="container"> <section class="card" data-tool-shell data-tool="remove-exif" data-lang="es" data-remove-exif-url="/es/quitar-exif/" data-remove-gps-url="/es/quitar-gps-foto/" data-view-exif-url="/es/ver-exif/"> <div class="notice notice--privacy"> <strong>Privacidad</strong> Tus fotos se procesan en tu navegador. No se suben a nuestros servidores. </div> <label class="dropzone" data-dropzone> <input class="sr-only" data-file-input type="file" accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif"> <span class="dropzone__title">Selecciona una foto</span> <span class="dropzone__sub">Arrastra una foto aquí</span> <span class="dropzone__hint">JPG y JPEG son compatibles. PNG tiene soporte básico. HEIC todavía no está disponible de forma fiable en esta .</span> </label> <div class="button-row"> <button type="button" class="button button--secondary" data-trigger-file>Elige una imagen desde tu dispositivo</button> </div> <div class="status-panel"> <div class="status-card" data-status></div> </div> <div class="tool-output" data-output hidden></div>
+<main id="main"> <section class="page-heading"> <div class="container page-heading__grid"> <div> <span class="eyebrow">Herramienta local</span> <h1>Quitar EXIF de una foto</h1> <p class="lede">Genera una copia nueva de la imagen sin el bloque EXIF original, directamente en tu dispositivo y sin depender de un servidor.</p> <ul class="badge-list"> <li>Procesado local en el navegador.</li><li>Descarga una copia limpia lista para compartir.</li><li>Confirmación visible de que la copia ya no conserva EXIF.</li> </ul> </div> <aside class="content-card"> <h2>Cómo funciona</h2> <p>Al seleccionar la foto, la web la vuelve a generar localmente mediante el navegador para crear un nuevo archivo sin conservar el bloque EXIF incrustado en la imagen original.</p><p>Después verificamos la copia resultante para confirmar que ya no contiene EXIF legible.</p> </aside> </div> </section> <section class="page-section"> <div class="container"> <section class="card" data-tool-shell data-tool="remove-exif" data-lang="es" data-remove-exif-url="/es/quitar-exif/" data-remove-gps-url="/es/quitar-gps-foto/" data-view-exif-url="/es/ver-exif/">
+  <div class="notice notice--privacy">
+    <strong>Privacidad</strong> Tus fotos se procesan en tu navegador. No se suben a nuestros servidores.
+  </div>
+
+  <div class="workbench-grid">
+    <div class="workbench-left">
+      <label class="dropzone" data-dropzone>
+        <input class="sr-only" data-file-input type="file" accept=".jpg,.jpeg,.png,.heic,.heif,image/jpeg,image/png,image/heic,image/heif">
+        <span class="dropzone__title">Selecciona una foto</span>
+        <span class="dropzone__sub">Arrastra una foto aquí</span>
+        <span class="dropzone__hint">JPG y JPEG compatibles. PNG con soporte básico. HEIC aún no tiene soporte fiable en todos los navegadores.</span>
+      </label>
+
+      <div class="button-row">
+        <button type="button" class="button button--secondary" data-trigger-file>Elige una imagen desde tu dispositivo</button>
+      </div>
+
+      <div class="status-panel">
+        <div class="status-card" data-status></div>
+      </div>
+
+      <div class="preview-shell" data-preview hidden>
+        <div class="preview-shell__grid">
+          <div class="preview-image">
+            <img data-preview-img src="" alt="">
+          </div>
+          <div class="preview-meta">
+            <p class="kicker">Archivo seleccionado</p>
+            <strong data-file-name>-</strong>
+            <span data-file-info>-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="workbench-right">
+      <div class="tool-output" data-output hidden></div>
+    </div>
+  </div>
+
 </section> </div> </section> <section class="page-section"> <div class="container content-columns"> <article class="content-card"> <h2>Consejo útil</h2> <p>Si solo quieres saber si existe ubicación GPS antes de limpiar la foto, usa primero la herramienta específica para comprobar ubicación.</p> </article> <aside class="content-card"> <h2>Enlaces relacionados</h2> <div class="link-grid"> <a class="link-card" href="/es/ver-exif/"><h3>Ver EXIF antes de limpiar</h3></a>
 <a class="link-card" href="/es/foto-tiene-ubicacion/"><h3>Comprobar ubicación GPS</h3></a>
 <a class="link-card" href="/es/preguntas-frecuentes/"><h3>Preguntas frecuentes</h3></a> </div> </aside> </div> </section>
