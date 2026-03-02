@@ -1,123 +1,44 @@
 <!doctype html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PhotoPrivacyTool | Remove EXIF metadata and GPS location locally</title>
-  <meta name="description" content="PhotoPrivacyTool helps you view EXIF data, check GPS location and create clean copies of photos directly in your browser with no file uploads.">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://photoprivacytool.pages.dev/">
-  <link rel="alternate" hreflang="es" href="https://photoprivacytool.pages.dev/es/"> <link rel="alternate" hreflang="en" href="https://photoprivacytool.pages.dev/en/"> <link rel="alternate" hreflang="x-default" href="https://photoprivacytool.pages.dev/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="PhotoPrivacyTool | Remove EXIF metadata and GPS location locally">
-  <meta property="og:description" content="PhotoPrivacyTool helps you view EXIF data, check GPS location and create clean copies of photos directly in your browser with no file uploads.">
-  <meta property="og:url" content="https://photoprivacytool.pages.dev/">
-  <meta property="og:site_name" content="PhotoPrivacyTool">
-  <meta property="og:locale" content="en_GB">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PhotoPrivacyTool | Remove EXIF metadata and GPS location locally">
-  <meta name="twitter:description" content="PhotoPrivacyTool helps you view EXIF data, check GPS location and create clean copies of photos directly in your browser with no file uploads.">
-  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "PhotoPrivacyTool",
-  "url": "https://photoprivacytool.pages.dev",
-  "description": "PhotoPrivacyTool helps you view EXIF data, check GPS location and create clean copies of photos directly in your browser with no file uploads.",
-  "inLanguage": "en",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://photoprivacytool.pages.dev/en/",
-    "query-input": "required name=tool"
-  }
-}
+  <title>PhotoPrivacyTool</title>
+  <meta name="robots" content="noindex,follow">
+  <link rel="alternate" hreflang="es" href="/es/">
+  <link rel="alternate" hreflang="en" href="/en/">
+  <link rel="alternate" hreflang="x-default" href="/">
+  <meta http-equiv="refresh" content="0;url=/en/">
+  <script>
+    (function () {
+      try {
+        var langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""]);
+        var isSpanish = false;
+        for (var i = 0; i < langs.length; i++) {
+          var l = (langs[i] || "").toLowerCase();
+          if (l === "es" || l.startsWith("es-")) { isSpanish = true; break; }
+        }
+        var target = isSpanish ? "/es/" : "/en/";
+        if (location.pathname === "/" && location.search === "" && location.hash === "") {
+          location.replace(target);
+        } else {
+          location.href = target;
+        }
+      } catch (e) {
+        location.replace("/en/");
+      }
+    })();
   </script>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;padding:2rem;line-height:1.4}
+    a{display:inline-block;margin-right:1rem}
+  </style>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-
-<header class="site-header">
-  <div class="container site-header__row">
-    <a class="brand" href="/" aria-label="PhotoPrivacyTool">
-      <span class="brand__mark" aria-hidden="true"></span>
-      <span class="brand__name">PhotoPrivacyTool<small>EXIF + GPS privacy tools</small></span>
-    </a>
-    
-    <div class="lang-switch" aria-label="Language switcher">
-      <a href="/es/">ES</a>
-      <a href="/en/">EN</a>
-    </div>
-  </div>
-</header>
-<main id="main">
-  <section class="hero">
-    <div class="container hero__grid">
-      <div>
-        <span class="eyebrow">Client-side privacy tools</span>
-        <h1>Privacy-first photo tools for EXIF and GPS metadata</h1>
-        <p class="lede">PhotoPrivacyTool helps you view EXIF data, check GPS location and create clean copies of photos directly in your browser with no file uploads.</p>
-        <div class="button-row">
-          <a class="button button--primary" href="/es/">Entrar en español</a>
-          <a class="button button--secondary" href="/en/">Enter in English</a>
-        </div>
-      </div>
-      <aside class="hero-card">
-        <h2>What this static V1 includes</h2>
-        <ul>
-          <li>Real crawlable pages for Spanish and English.</li>
-          <li>Client-side EXIF inspection for JPG/JPEG and basic PNG eXIf support.</li>
-          <li>Local clean-copy generation with no backend image upload.</li>
-          <li>Technical SEO essentials: canonical, hreflang, sitemap, robots and schema.</li>
-        </ul>
-      </aside>
-    </div>
-  </section>
-
-  <section class="page-section">
-    <div class="container">
-      <div class="content-columns">
-        <article class="content-card">
-          <h2>Spanish experience</h2>
-          <p>Use the Spanish version to view EXIF metadata, remove EXIF, remove GPS information from photos and check whether an image keeps location data before sharing it.</p>
-          <div class="button-row">
-            <a class="button button--primary" href="/es/">Go to /es/</a>
-          </div>
-        </article>
-        <article class="content-card">
-          <h2>English experience</h2>
-          <p>Use the English version to inspect photo metadata, create a clean copy in the browser and read legal or FAQ pages designed for privacy-conscious sharing.</p>
-          <div class="button-row">
-            <a class="button button--primary" href="/en/">Go to /en/</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    
-        <div class="footer-grid">
-          <div class="site-footer__brand">
-            <h2>PhotoPrivacyTool</h2>
-            <p>A static privacy-first website to inspect EXIF metadata, detect GPS location and create clean image copies directly in the browser.</p>
-          </div>
-          <div>
-            <h3>Language</h3>
-            <ul>
-              <li><a href="/es/">Español</a></li>
-              <li><a href="/en/">English</a></li>
-            </ul>
-          </div>
-        </div>
-        
-  </div>
-</footer>
+  <noscript>
+    <h1>PhotoPrivacyTool</h1>
+    <p>Please choose your language:</p>
+    <p><a href="/es/">Español</a> <a href="/en/">English</a></p>
+  </noscript>
 </body>
 </html>
